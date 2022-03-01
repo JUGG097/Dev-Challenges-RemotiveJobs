@@ -2,7 +2,11 @@ import React from "react";
 import { StyledCategoryFilter } from "./styles/CategoryFilter.styled";
 import { RiSuitcaseLine } from "react-icons/ri";
 
-const CategoryFilter: React.FC = () => {
+const CategoryFilter: React.FC<{
+	searchTerm: string;
+	handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+	handleSubmit: () => void;
+}> = ({ searchTerm, handleChange, handleSubmit }) => {
 	return (
 		<StyledCategoryFilter>
 			<div className="row search-div">
@@ -10,13 +14,16 @@ const CategoryFilter: React.FC = () => {
 					<RiSuitcaseLine />
 					<input
 						type="search"
-						name=""
-						id=""
-						placeholder="Search Categories"
+						name="categorySearch"
+						value={searchTerm}
+						onChange={handleChange}
+						placeholder="Search Job Title Keywords"
 					/>
 				</div>
 				<div className="col-3">
-					<button className="btn btn-primary">Search</button>
+					<button className="btn btn-primary" onClick={handleSubmit}>
+						Search
+					</button>
 				</div>
 			</div>
 		</StyledCategoryFilter>

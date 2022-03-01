@@ -55,6 +55,11 @@ function App() {
 					Opps an error occured...Try and refresh
 				</h4>
 			)}
+			<footer className="mt-4 text-center">
+				<p>
+					created by <span>Adeoluwa Adeboye</span> - devChallenges.io
+				</p>
+			</footer>
 		</>
 	);
 }

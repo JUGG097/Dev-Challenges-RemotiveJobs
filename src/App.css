@@ -12,3 +12,14 @@
     font-weight: 300;
     font-size: 24px;
 }
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    color: #B9BDCF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer span {
+    font-weight: 700;
+}

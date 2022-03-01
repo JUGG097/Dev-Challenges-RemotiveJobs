@@ -4,7 +4,6 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background: #F6F7FB;
         font-family: 'Poppins', sans-serif;
-/* font-family: 'Roboto', sans-serif; */
     }
 
     input::placeholder {

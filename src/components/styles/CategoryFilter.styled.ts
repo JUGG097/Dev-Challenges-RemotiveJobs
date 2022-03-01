@@ -21,6 +21,7 @@ export const StyledCategoryFilter = styled.div`
 		height: 50px;
 		padding: 0 5px 0 25px;
 		border: none;
+		font-size: 12px;
 	}
 
 	/* .search-div input::placeholder {
@@ -57,6 +58,12 @@ export const StyledCategoryFilter = styled.div`
 		.search-div svg {
 			top: 6px;
 			left: 18px;
+		}
+	}
+
+	@media (max-width: 424px) {
+		.search-div {
+			width: 90%;
 		}
 	}
 
