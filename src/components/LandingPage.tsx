@@ -138,8 +138,10 @@ const LandingPage: React.FC<{ jobsArray: JobData[] }> = ({ jobsArray }) => {
 					</div>
 				</div>
 				<div className="col-sm-9">
-					{paginatedJobs === [] ? (
-						<h4 className="text-center">No Jobs Found...</h4>
+					{filterJobs.length === 0 ? (
+						<h4 className="text-center">
+							No Jobs Found...Refresh Page
+						</h4>
 					) : (
 						paginatedJobs
 							.slice(0, 5)
